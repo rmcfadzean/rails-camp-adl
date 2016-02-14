@@ -14,10 +14,6 @@ configure :development do
 end
 
 configure :build do
-  activate :autoprefixer  do |config|
-    config.browsers = ['last 2 versions', 'Explorer >= 9']
-  end
-
   activate :minify_css
   activate :minify_javascript
 end
