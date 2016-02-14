@@ -1,0 +1,24 @@
+<section id="sponsors" class="section text-xs-center">
+  <div class="container">
+    <!-- <h5 class="section-icon">
+      <i class="fa fa-tag"></i>
+    </h5> -->
+    <h3 class="section-heading">
+      Sponsors
+    </h3>
+
+    <div class="section-note">
+      We're on the lookout for new sponsors! Interested? <a href="#">Let us know!</a>
+    </div>
+
+    <ul>
+      <% data.sponsors.each do |sponsor| %>
+        <li class="sponsor">
+          <% link_to sponsor['website'] do %>
+            <%= image_tag sponsor['logo'], title: sponsor['title'] %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

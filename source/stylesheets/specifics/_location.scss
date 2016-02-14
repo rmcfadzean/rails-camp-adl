@@ -1,0 +1,53 @@
+#location {
+  position: relative;
+  .location-map {
+    min-height: 400px;
+    position: relative;
+    transform: none !important;
+  }
+
+  .map-info-container {
+    position: static;
+  }
+
+  .map-info {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    z-index: 999;
+
+    @include media-breakpoint-down(xs) {
+      transform: none;
+      position: static;
+      padding: 1rem;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin: 1rem 0;
+
+        a {
+          text-decoration: none;
+        }
+
+        .fa {
+          margin-right: 25px;
+          vertical-align: text-bottom;
+          width: 26px;
+          font-size: 24px;
+
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}

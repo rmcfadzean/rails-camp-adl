@@ -1,0 +1,50 @@
+<section id="tickets" class="section">
+  <div class="container">
+    <h3 class="section-icon">
+      <i class="fa fa-ticket"></i>
+    </h3>
+    <h3 class="section-heading">
+      Tickets
+    </h3>
+
+    <div class="section-note">
+      Campers are expected to follow the <a href="http://ruby.org.au/code-of-conduct.html">Ruby Australia code of conduct</a>.
+      You will be asked to agree to the CoC before you purchase your ticket.<br>
+      Prices are in AUD and inclusive of GST
+    </div>
+
+    <div class="ticket-container">
+      <% data.tickets.each do |ticket| %>
+        <div class="col-sm-4 col-xs-12">
+          <div class="ticket-pricing">
+            <h4 class="ticket-title"><%= ticket['type'] %></h4>
+            <h5 class="ticket-price">
+              <% if ticket['price'] > 0 %>
+                <span class="dollar">$</span>
+                <%= ticket['price'] %>
+              <% else %>
+                Free
+              <% end %>
+            </h5>
+            <div class="ticket-details">
+              <p class="small"><%= ticket['description'] %></p>
+              <ul>
+                <% ticket['details'].each do |detail| %>
+                  <li>
+                    <!-- <i class="fa fa-check check-icon"></i> -->
+                    <%= detail %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+            <% if ticket['type'] == 'Sponsored' %>
+              <a href="<%= ticket['link'] %>" class="btn btn-primary-clr">Apply</a>
+            <% else %>
+              <a href="<%= ticket['link'] %>" class="btn btn-primary-clr">Buy now</a>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

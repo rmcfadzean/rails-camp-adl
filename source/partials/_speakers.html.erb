@@ -1,0 +1,38 @@
+<section id="speakers" class="section">
+  <div class="container">
+    <h5 class="section-icon">
+      <i class="fa fa-users"></i>
+    </h5>
+    <h3 class="section-heading">
+      Speakers
+    </h3>
+
+    <% data.speakers.each do |speaker| %>
+      <div class="col-sm-4 col-xs-12">
+        <div class="speaker">
+          <div class="speaker-photo">
+            <%= image_tag "#{speaker['photo']}", class: 'img-responsive img-circle' %>
+          </div>
+          <h4 class="speaker-name">
+            <%= speaker['name'] %>
+          </h4>
+          <small class="speaker-title">
+            <%= speaker['title'] %>
+          </small>
+          <p class="speaker-about">
+            <%= speaker['description'] %>
+          </p>
+          <ul class="speaker-social">
+            <% speaker['social'].each do |social| %>
+              <li>
+                <% link_to social['link'] do %>
+                  <i class="fa fa-<%= social['icon'] %> fa-fw" title="<%= social['title'] %>"></i>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

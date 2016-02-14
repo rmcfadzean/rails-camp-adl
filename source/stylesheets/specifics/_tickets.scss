@@ -1,0 +1,73 @@
+#tickets {
+
+  .ticket-container {
+    // display: flex;
+    // @include make-row();
+  }
+
+  .ticket-pricing {
+    @extend .card;
+    // box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+    // display: table-cell;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 0;
+    margin: 0 0.5rem;
+
+    @include media-breakpoint-up(xs) {
+      margin-bottom: 1rem;
+    }
+
+    .ticket-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+
+      color: $brand-primary;
+    }
+
+    .ticket-price {
+      font-size: 3rem;
+      font-weight: 800;
+      // color: $brand-primary;
+
+      .dollar {
+        font-size: 2rem;
+        vertical-align: top;
+      }
+    }
+
+    .ticket-details {
+      padding: 1rem 0 2rem 0;
+
+      .small {
+        padding: 0 1rem;
+      }
+
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      // text-align: left;
+
+      li {
+        border-bottom: 1px solid $gray-lighter;
+        padding: 1rem;
+      }
+    }
+
+    .fa {
+      color: $brand-success;
+      margin-right: 1rem;
+      // float: left;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      // position: absolute;
+      // bottom: 10px;
+      // transform: translateX(-50%);
+    }
+  }
+}

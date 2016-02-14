@@ -1,0 +1,29 @@
+-
+  type: Standard
+  description: For any and everyone
+  link: https://ti.to/ruby-australia/rails-camp-adelaide-2016
+  price: 290
+  details:
+    - Accomodation
+    - Food & drink
+    - Transport to and from the airport & CBD
+
+-
+  type: Concession
+  description: Discounted price for people with a concession or student card
+  price: 210
+  link: https://ti.to/ruby-australia/rails-camp-adelaide-2016/discount/Concession
+  details:
+    - Accomodation
+    - Food & drink
+    - Transport to and from the airport & CBD
+
+-
+  type: Sponsored
+  description: For underprivileged people who can't afford concession tickets
+  link:
+  price: 0
+  details:
+    - Accomodation
+    - Food & drink
+    - Transport to and from the airport & CBD

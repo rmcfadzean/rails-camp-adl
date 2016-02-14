@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title><%= current_page.data.title %></title>
+
+    <%= stylesheet_link_tag :site %>
+  </head>
+
+  <body class="<%= page_classes %>" data-spy="scroll" data-target="#navbar-top" data-offset="80">
+    <%= yield %>
+
+    <%= partial 'partials/footer' %>
+
+    <%= javascript_include_tag "//code.jquery.com/jquery-2.2.0.min.js" %>
+    <%= javascript_include_tag "bootstrap.min.js" %>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <%= javascript_include_tag :all %>
+    <%= yield_content :javascript %>
+  </body>
+</html>

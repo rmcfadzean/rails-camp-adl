@@ -1,0 +1,36 @@
+#footer {
+  background-color: #262627;
+  padding: 2rem 0;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+
+    .footer-copyright {
+      display: block;
+    }
+
+    .nav-link {
+      padding: 0.5rem 0.2rem;
+    }
+  }
+
+  .nav-item {
+    color: lighten(#262627, 25%);
+    @extend .small;
+    float: right;
+    padding: 0.2rem 0;
+  }
+  .nav-link {
+    color: lighten(#262627, 25%);
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @extend .small;
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+
+}

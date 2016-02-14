@@ -1,0 +1,43 @@
+#speakers {
+  .speaker {
+    text-align: center;
+
+    .speaker-photo {
+
+      padding: 1rem 0;
+      img {
+        width: 120px;
+      }
+    }
+
+    .speaker-name {
+      color: $brand-primary;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .speaker-title {
+      color: $gray-light;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .speaker-social {
+      list-style: none;
+      padding-left: 0;
+      li {
+        display: inline-block;
+      }
+
+      .fa {
+        font-size: 1.5rem;
+        color: $body-color;
+
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}

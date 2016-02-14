@@ -1,0 +1,82 @@
+#hero {
+  z-index: 1;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  padding-top: 1rem;
+  height: 100vh;
+
+  &.bg-hills {
+    background-image: url('../images/backgrounds/background2.jpg');
+  }
+
+  &.overlay {
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      content: "";
+      background-color: #262627;
+
+      opacity: 0.9;
+    }
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .heading-info {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+
+    i {
+      color: $brand-primary;
+    }
+
+    span {
+      @include media-breakpoint-down(xs) {
+        display: block;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .tagline {
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+
+  .btn-container {
+    padding: 2rem 0;
+  }
+  .btn-buy {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    padding: 1rem 2rem;
+  }
+}

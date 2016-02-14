@@ -1,0 +1,9 @@
+.btn-primary-clr {
+  @include button-variant($brand-primary, transparent, $brand-primary);
+  transition: all 0.5s ease-in-out;
+
+  &:hover, &:focus {
+    color: #fff;
+    background-color: $brand-primary;
+  }
+}

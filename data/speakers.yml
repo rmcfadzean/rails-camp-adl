@@ -1,0 +1,61 @@
+-
+  name: Rick Sanchez
+  title: Scientist, Inventor, Arms salesman, Grandpa
+  photo: https://placehold.it/350/8fe957/FFFFFF?text=RS
+  description: >
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.<br>
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+  social:
+    -
+      icon: github
+      title: Rick @ Github
+      link: https://github.com/
+    -
+      icon: twitter
+      title: Rick @ Twitter
+      link: https://twitter.com/
+    -
+      icon: link
+      title: Personal website
+      link: https://google.com/
+
+-
+  name: Morty Smith
+  title: Just Morty
+  photo: https://placehold.it/350/E8117F/FFFFFF?text=MS
+  description: >
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.<br>
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+  social:
+    -
+      icon: github
+      title: morty @ Github
+      link: https://github.com/
+    -
+      icon: twitter
+      title: morty @ Twitter
+      link: https://twitter.com/
+    -
+      icon: link
+      title: Personal website
+      link: https://google.com/
+
+-
+  name: Krombopulos Michael
+  title: Universe Assassin
+  photo: https://placehold.it/350/11c1e8/FFFFFF?text=KM
+  description: >
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.<br>
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+  social:
+    -
+      icon: github
+      title: krombop @ Github
+      link: https://github.com/
+    -
+      icon: twitter
+      title:  krombop @ Twitter
+      link: https://twitter.com/
