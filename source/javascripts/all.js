@@ -4,7 +4,7 @@ function scrollNav() {
     $('#navbar-collapse').collapse('hide');
 
     //Animate
-    $('html, body').animate({
+    $('html, body').stop().animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
   });
@@ -20,8 +20,10 @@ function fixedNav() {
 
   $(window).on('scroll load', function() {
     if( $(this).scrollTop() > (heroElement.height() + navbarTop.height()/3) ) {
+      $('body').css("padding-top", navbarTop.height() + "px");
       navbarTop.addClass(navbarFixedClass);
     } else {
+      $('body').css("padding-top", 0);
       navbarTop.removeClass(navbarFixedClass);
     }
   });
